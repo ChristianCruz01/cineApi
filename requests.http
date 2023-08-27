@@ -1,0 +1,26 @@
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Sara Cruz",
+    "age": 9,
+    "email": "saraccruz@gmail.com"
+}
+
+###
+GET http://localhost:9000/api/users HTTP/1.1
+
+###
+GET http://localhost:9000/api/users/64ea9945c4ef56ede0c5ca84 HTTP/1.1
+###
+PUT http://localhost:9000/api/users/64ea9945c4ef56ede0c5ca84 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Sebas Cruz",
+    "age": 8,
+    "email": "saraccruz@gmail.com"
+}
+###
+DELETE http://localhost:9000/api/users/64ea9945c4ef56ede0c5ca84 HTTP/1.1
